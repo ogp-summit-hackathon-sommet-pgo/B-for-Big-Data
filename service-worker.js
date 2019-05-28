@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ogp-summit-hackathon-sommet-pgo.github.io/B-for-Big-Data/precache-manifest.7828730c039679842486ddd5b551f9f4.js"
+  "/ogp-summit-hackathon-sommet-pgo.github.io/B-for-Big-Data/precache-manifest.202b7601e652e4d4ca1ce0980817648a.js"
 );
 
 self.addEventListener('message', (event) => {

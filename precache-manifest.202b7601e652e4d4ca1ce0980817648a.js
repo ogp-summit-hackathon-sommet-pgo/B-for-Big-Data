@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "460ab1376eec40575d4b3aa6ef2db065",
+    "revision": "d1e709f1f1feac320c83f485047307ec",
     "url": "/ogp-summit-hackathon-sommet-pgo.github.io/B-for-Big-Data/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ogp-summit-hackathon-sommet-pgo.github.io/B-for-Big-Data/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "9f601b08edd806967d5d",
+    "revision": "b2718daa9e59a0569baf",
     "url": "/ogp-summit-hackathon-sommet-pgo.github.io/B-for-Big-Data/static/css/main.1c1f8ff9.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ogp-summit-hackathon-sommet-pgo.github.io/B-for-Big-Data/static/js/2.8eb08e90.chunk.js"
   },
   {
-    "revision": "9f601b08edd806967d5d",
-    "url": "/ogp-summit-hackathon-sommet-pgo.github.io/B-for-Big-Data/static/js/main.a1b78b12.chunk.js"
+    "revision": "b2718daa9e59a0569baf",
+    "url": "/ogp-summit-hackathon-sommet-pgo.github.io/B-for-Big-Data/static/js/main.c2a179f7.chunk.js"
   },
   {
     "revision": "9ff1485f62ed8ce76582",
