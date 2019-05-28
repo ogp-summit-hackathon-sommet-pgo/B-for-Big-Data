@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ogp-summit-hackathon-sommet-pgo.github.io/B-for-Big-Data/precache-manifest.202b7601e652e4d4ca1ce0980817648a.js"
+  "/B-for-Big-Data/precache-manifest.3b7adc5b275aec848faef6dc1542d1fe.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/ogp-summit-hackathon-sommet-pgo.github.io/B-for-Big-Data/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/B-for-Big-Data/index.html"), {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
