@@ -2,6 +2,7 @@
   "name": "app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ogp-summit-hackathon-sommet-pgo.github.io/B-for-Big-Data",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "d3": "^5.9.2",
@@ -15,6 +16,8 @@
     "topojson-client": "^3.0.0"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

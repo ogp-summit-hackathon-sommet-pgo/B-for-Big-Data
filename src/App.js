@@ -61,14 +61,38 @@ class App extends React.Component {
             </div>
             <ListGroup>
               <ListGroupItem className="justify-content-between">
+                <Input style={{paddingLeft: "15px"}} type="checkbox" onClick={this.toggleNeighbourhoods} checked="checked" />
+                Neighbourhoods <Badge pill>141</Badge>
+              </ListGroupItem>
+            </ListGroup>
+            <ListGroup>
+              <ListGroupItem className="justify-content-between">
                 <Input style={{paddingLeft: "15px"}} type="checkbox" onClick={this.toggleBikes} checked="checked" />
                 Bike parking <Badge pill>56</Badge>
               </ListGroupItem>
             </ListGroup>
             <ListGroup>
               <ListGroupItem className="justify-content-between">
-                <Input style={{paddingLeft: "15px"}} type="checkbox" onClick={this.toggleNeighbourhoods} checked="checked" />
-                Neighbourhoods <Badge pill>141</Badge>
+                <Input style={{paddingLeft: "15px"}} type="checkbox" />
+                Green Space <Badge pill>X</Badge>
+              </ListGroupItem>
+            </ListGroup>
+            <ListGroup>
+              <ListGroupItem className="justify-content-between">
+                <Input style={{paddingLeft: "15px"}} type="checkbox" />
+                Transit Shelter <Badge pill>X</Badge>
+              </ListGroupItem>
+            </ListGroup>
+            <ListGroup>
+              <ListGroupItem className="justify-content-between">
+                <Input style={{paddingLeft: "15px"}} type="checkbox" />
+                Schools<Badge pill>X</Badge>
+              </ListGroupItem>
+            </ListGroup>
+            <ListGroup>
+              <ListGroupItem className="justify-content-between">
+                <Input style={{paddingLeft: "15px"}} type="checkbox" />
+                Retirement Homes<Badge pill>X</Badge>
               </ListGroupItem>
             </ListGroup>
           </Col>
