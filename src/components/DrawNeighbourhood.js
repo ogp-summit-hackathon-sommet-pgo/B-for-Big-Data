@@ -32,7 +32,7 @@ class DrawNeighbourhood extends Component {
         },
         key: `path-${ this.props.index }`,
         d: geoPath().projection(this.projection())(this.props.neighbourhood),
-        fill: this.state.hover ? "#6DD2DA" : "#15A3A6", 
+        fill: this.state.hover ? "#137991" : "#0D467D", 
         stroke: "#000000",
         strokeWidth: 0.5, 
         onClick: () => this.handleMarkerClick(), 

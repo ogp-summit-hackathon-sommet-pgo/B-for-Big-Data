@@ -45,7 +45,7 @@ class LocationMarker extends Component {
         cx: this.state.position[0],
         cy: this.state.position[1],
         r: 5, 
-        fill: this.state.hover ? "#137991" : "#002D42",
+        fill: this.state.hover ? "#137991" : "#AF3C43",
         stroke: this.state.hover ? "#002D42" : "#137991",
         onClick: () => this.handleMarkerClick(), 
         onMouseEnter: () => this.setState({hover: true}),

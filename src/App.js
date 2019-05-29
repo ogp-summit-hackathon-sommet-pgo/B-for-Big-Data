@@ -10,11 +10,12 @@ import {
   ListGroup, 
   ListGroupItem, 
   Badge,
-  Input
+  Button
 } from "reactstrap";
 
 import NeighbourhoodData from "./data/neighbourhoods.js";
-import TransitShelterData from "./data/bicycle_parking.js";
+import BikeParkingData from "./data/bicycle_parking.js";
+//import GreenSpacesData from "./data/green_spaces.js";
 import Map from "./components/Map";
 
 class App extends React.Component {
@@ -24,7 +25,8 @@ class App extends React.Component {
 
     this.state = {
       showingBikes: true,
-      showingNeighbourhoods: true
+      showingNeighbourhoods: true,
+      showingGreenSpaces: true
     }
 
     this.toggleBikes = this.toggleBikes.bind(this);
@@ -43,17 +45,30 @@ class App extends React.Component {
     }));
   }
 
+  toggleGreenSpaces() {
+    this.setState(prevState => ({
+      showingGreenSpaces: !prevState.showingGreenSpaces
+    }));
+  }
+
   render() {
     return (
       <Container fluid>
-        <Row>
+        <Row style={{marginBottom: "50px", marginTop: "20px"}}>
           <Col className="text-center">
             <h1>Green City Navigator</h1>
           </Col>
         </Row>
         <Row>
           <Col md="9" lg="9">
-            <Map showingBikes={this.state.showingBikes} showingNeighbourhoods={this.state.showingNeighbourhoods} neighbourhoods={NeighbourhoodData} transit_shelters={TransitShelterData} />
+            <Map 
+              showingBikes={this.state.showingBikes} 
+              showingNeighbourhoods={this.state.showingNeighbourhoods} 
+              //showingGreenSpaces={this.state.showingGreenSpaces}
+              neighbourhoods={NeighbourhoodData} 
+              bike_parking={BikeParkingData}
+              //green_spaces={GreenSpacesData}
+              />
           </Col>
           <Col md="3" lg="3">
             <div className="text-center">
@@ -61,40 +76,52 @@ class App extends React.Component {
             </div>
             <ListGroup>
               <ListGroupItem className="justify-content-between">
-                <Input style={{paddingLeft: "15px"}} type="checkbox" onClick={this.toggleNeighbourhoods} checked="checked" />
-                Neighbourhoods <Badge pill>141</Badge>
+                <Button style={{paddingLeft: "15px"}} type="checkbox" onClick={this.toggleNeighbourhoods}>
+                {
+                  (this.state.showingNeighbourhoods) ?
+                  "Hide Neighbourhoods" :
+                  "Show Neighbourhoods"
+                }
+                </Button>
               </ListGroupItem>
             </ListGroup>
             <ListGroup>
               <ListGroupItem className="justify-content-between">
-                <Input style={{paddingLeft: "15px"}} type="checkbox" onClick={this.toggleBikes} checked="checked" />
-                Bike parking <Badge pill>56</Badge>
+                <Button style={{paddingLeft: "15px"}} type="checkbox" onClick={this.toggleBikes}>
+                {
+                  (this.state.showingBikes) ?
+                  "Hide Bicycle Parking" :
+                  "Show Bicycle Parking"
+                }
+                </Button>
               </ListGroupItem>
             </ListGroup>
-            <ListGroup>
-              <ListGroupItem className="justify-content-between">
-                <Input style={{paddingLeft: "15px"}} type="checkbox" />
-                Green Space <Badge pill>X</Badge>
-              </ListGroupItem>
-            </ListGroup>
-            <ListGroup>
-              <ListGroupItem className="justify-content-between">
-                <Input style={{paddingLeft: "15px"}} type="checkbox" />
-                Transit Shelter <Badge pill>X</Badge>
-              </ListGroupItem>
-            </ListGroup>
-            <ListGroup>
-              <ListGroupItem className="justify-content-between">
-                <Input style={{paddingLeft: "15px"}} type="checkbox" />
-                Schools<Badge pill>X</Badge>
-              </ListGroupItem>
-            </ListGroup>
-            <ListGroup>
-              <ListGroupItem className="justify-content-between">
-                <Input style={{paddingLeft: "15px"}} type="checkbox" />
-                Retirement Homes<Badge pill>X</Badge>
-              </ListGroupItem>
-            </ListGroup>
+            <div className="text-center" style={{marginTop: "20px"}}>
+              <h4>Project Description</h4>
+            </div>
+            <div>
+              <p>
+                Our hackathon objective was to address the following UN sustainability goal:
+              </p>
+              <p>
+                Mobilize open data to identify the share of public use of open spaces in cities. 
+                What percentage is green space? How often are they used? 
+                How much open space is accessible to children? Older persons? 
+                Persons with disabilities? 
+              </p>
+              <p>
+                This web app was created as one portion of our solution, aimed at displaying potential methods with which we could
+                interactively display information to citizens.
+              </p>
+              <p>
+                The app allows you to click on various neighbourhoods in Toronto in order to display 
+                information about green spaces and other features. 
+              </p>
+              <p>
+                Unfortunately we ran into scalability issues where our data is too large, especially the green space data, to fit inside memory using D3. 
+                Development of a WebGL based version would likely solve these issues.
+              </p>
+            </div>
           </Col>
         </Row>
       </Container>
