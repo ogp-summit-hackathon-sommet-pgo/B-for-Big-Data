@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/B-for-Big-Data/precache-manifest.f8975f2b9156f567917a946d930af115.js"
+  "/B-for-Big-Data/precache-manifest.5b9c8df03fcf7395fdacce2f86b68c59.js"
 );
 
 self.addEventListener('message', (event) => {

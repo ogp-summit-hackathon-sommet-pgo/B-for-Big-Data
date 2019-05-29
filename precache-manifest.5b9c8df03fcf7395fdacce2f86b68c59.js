@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ae57f1313face0e6c922b052e16565e0",
+    "revision": "1d00b879250b81c5e7ab2f711a381521",
     "url": "/B-for-Big-Data/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/B-for-Big-Data/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "1b3f547a2cd91545de84",
+    "revision": "4f2414835a52d247bb3f",
     "url": "/B-for-Big-Data/static/css/main.1c1f8ff9.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/B-for-Big-Data/static/js/2.696aa173.chunk.js"
   },
   {
-    "revision": "1b3f547a2cd91545de84",
-    "url": "/B-for-Big-Data/static/js/main.50088f5e.chunk.js"
+    "revision": "4f2414835a52d247bb3f",
+    "url": "/B-for-Big-Data/static/js/main.b84e34c7.chunk.js"
   },
   {
     "revision": "4cadade4a0911b0f4fb8",
